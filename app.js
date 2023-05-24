@@ -21,6 +21,8 @@ const incrementCounter = () => {
 
 
     counterValue.textContent = newValue
+
+    increaseBtn.blur()
 }
 
 counterResetBtn.addEventListener('click', () => {
@@ -41,6 +43,7 @@ decreaseBtn.addEventListener('click', () => {
     if (newValue < 0) return // dont go below 0
 
     counterValue.textContent = newValue
+    decreaseBtn.blur()
 })
 
 increaseBtn.addEventListener('click', incrementCounter)
