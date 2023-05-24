@@ -28,6 +28,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 0.4s;
+}
+
+.counter--limit {
+    background-color: #1b8bd1;
 }
 
 .counter__title {
