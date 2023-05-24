@@ -5,7 +5,7 @@ const counterResetBtn = document.querySelector('.counter__reset-button')
 const counterEl = document.querySelector('.counter')
 const counterTitle = document.querySelector('.counter__title')
 
-function incrementCounter() {
+const incrementCounter = () => {
     const currentValue = counterValue.textContent
     const currentValueAsNumber = +currentValue
     let newValue = currentValueAsNumber + 1;
@@ -23,7 +23,7 @@ function incrementCounter() {
     counterValue.textContent = newValue
 }
 
-counterResetBtn.addEventListener('click', function () {
+counterResetBtn.addEventListener('click', () => {
     counterValue.textContent = +0
     counterEl.classList.remove('counter--limit')
     counterTitle.innerHTML = `Nice Counter`
@@ -32,7 +32,7 @@ counterResetBtn.addEventListener('click', function () {
     counterResetBtn.blur()
 })
 
-decreaseBtn.addEventListener('click', function () {
+decreaseBtn.addEventListener('click', () => {
     const currentValue = counterValue.textContent
 
     const currentValueAsNumber = +currentValue
