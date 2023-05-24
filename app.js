@@ -29,6 +29,7 @@ counterResetBtn.addEventListener('click', function () {
     counterTitle.innerHTML = `Nice Counter`
     increaseBtn.disabled = false
     decreaseBtn.disabled = false
+    counterResetBtn.blur()
 })
 
 decreaseBtn.addEventListener('click', function () {
